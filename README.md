@@ -16,6 +16,7 @@ Decision trees are not that sensitive to missing values and skewness, therefore 
 
 Table 1
 Data                    | Train   | Validation 
+
 Misclassification Rate | 0.042936 | 0.043226
 
 
@@ -23,7 +24,9 @@ Due to the target ‘Enroll’ being a binary variable, we explored logistic reg
 
 Table 2
 Selection Method | Data                   | Train     | Validation
+
 Forward          | Misclassification Rate | 0.113019  | 0.104516
+
 Backward         | Misclassification Rate | 0.057064  | 0.069032
 
 
@@ -31,7 +34,9 @@ We also explored the effect of the skewness of variables on the performance our 
 
 Table 3
 Selection Method | Data                   | Train    | Validation
+
 Forward          | Misclassification Rate | 0.101385 | 0.092258
+
 Backward         | Misclassification Rate | 0.060942 | 0.072258
 
 
@@ -40,6 +45,7 @@ Similar to regression, neural networks require a complete record for prediction 
 
 Table 4
 Data                    | Train     | Validation
+
 Misclassification Rate  | 0.055956  | 0.207097
 
 
@@ -47,6 +53,7 @@ With the previous model, the train misclassification rate is low but the validat
 
 Table 5
 Data                   | Train     | Validation 
+
 Misclassification Rate | 0.095014  | 0.082581
 
 
@@ -55,12 +62,19 @@ After fitting these different models, we used the model comparison node to compa
 
 Table 6
 Model Misclassification Rate                  | Train    | Validation
+
 Decision Tree                                 | 0.042936 | 0.043226
+
 Regression with Non-transformed data –Forward | 0.113019 | 0.104516
+
 Regression with Non-transformed data –Backward| 0.057064 | 0.069032
+
 Regression with Transformed data - Forward    | 0.101385 | 0.092258
+
 Regression with Transformed data - Backward   | 0.060942 | 0.072258
+
 Neural Network                                | 0.055956 | 0.207097
+
 Neural Network with variables selected        | 0.095014 | 0.082581
 
 
