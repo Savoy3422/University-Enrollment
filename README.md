@@ -19,7 +19,7 @@ Data                    | Train   | Validation
 Misclassification Rate | 0.042936 | 0.043226
 
 
-	Due to the target ‘Enroll’ being a binary variable, we explored logistic regression models with both backward and forward selection methods. Since cases with missing values get ignored in regression models we used the imputed dataset to fit regression model. We obtained the misclassification rates shown in Table 2. 
+Due to the target ‘Enroll’ being a binary variable, we explored logistic regression models with both backward and forward selection methods. Since cases with missing values get ignored in regression models we used the imputed dataset to fit regression model. We obtained the misclassification rates shown in Table 2. 
 
 Table 2
 Selection Method | Data                   | Train     | Validation
